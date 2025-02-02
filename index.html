@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Schedule Your Social Media Posts</h1>
+    </header>
+    <main>
+        <section id="post-form">
+            <form id="schedule-form">
+                <label for="post-content">Post Content:</label>
+                <textarea id="post-content" name="post-content" required></textarea>
+                
+                <label for="schedule-time">Schedule Time:</label>
+                <input type="datetime-local" id="schedule-time" name="schedule-time" required>
+                
+                <button type="submit">Schedule Post</button>
+            </form>
+        </section>
+        <section id="post-preview">
+            <h2>Post Preview</h2>
+            <div id="preview-content"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
